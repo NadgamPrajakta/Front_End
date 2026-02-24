@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BOM Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>BOM Demo Application</h1>
+
+    <div class="card">
+        <h3>1. Location Info</h3>
+        <p id="locationInfo"></p>
+        <button onclick="reloadPage()">Reload Page</button>
+    </div>
+
+    <div class="card">
+        <h3>2. Browser Info</h3>
+        <p id="browserInfo"></p>
+    </div>
+
+    <div class="card">
+        <h3>3. Screen Info</h3>
+        <p id="screenInfo"></p>
+    </div>
+
+    <div class="card">
+        <h3>4. History Navigation</h3>
+        <button onclick="goBack()">Back</button>
+        <button onclick="goForward()">Forward</button>
+    </div>
+
+    <div class="card">
+        <h3>5. Live Clock</h3>
+        <h2 id="clock"></h2>
+    </div>
+
+    <div class="card">
+        <h3>6. Window Actions</h3>
+        <button onclick="showAlert()">Show Alert</button>
+        <button onclick="openGoogle()">Open Google</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

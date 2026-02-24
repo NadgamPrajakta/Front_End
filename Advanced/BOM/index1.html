@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BOM Dashboard</title>
+    <link rel="stylesheet" href="Style2.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Login Section -->
+    <div id="loginSection" class="card">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Enter Username">
+        <input type="password" id="password" placeholder="Enter Password">
+        <button onclick="login()">Login</button>
+        <p id="loginMsg"></p>
+    </div>
+
+    <!-- Dashboard Section -->
+    <div id="dashboard" class="card hidden">
+        <h2>Welcome <span id="userDisplay"></span></h2>
+
+        <h3>Live Clock</h3>
+        <p id="clock"></p>
+
+        <h3>Browser Info</h3>
+        <p id="browserInfo"></p>
+
+        <h3>Screen Info</h3>
+        <p id="screenInfo"></p>
+
+        <button onclick="reloadPage()">Reload</button>
+        <button onclick="goBack()">Back</button>
+        <button onclick="logout()">Logout</button>
+        <button onclick="openGoogle()">Open Google</button>
+    </div>
+
+</div>
+
+<script src="script3.js"></script>
+</body>
+</html>
